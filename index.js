@@ -46,16 +46,7 @@ const proxyHandler = (upstream, prefix) => {
   });
 };
 
-proxyHandler('https://nano-proxy.github.io/', '/nano/');
-proxyHandler('https://aluu.xyz/', '/aluu/');
-proxyHandler('https://holyunblocker.org/', '/holy/');
-proxyHandler('https://shuttleproxy.com/', '/shuttle/');
-proxyHandler('https://nebulaproxy.io/', '/nebula/');
-proxyHandler('https://nano-proxy.github.io/', '/');
-proxyHandler('https://anura.pro/', '/anura/');
-proxyHandler('https://terbium-46q.pages.dev/', '/terbium/');
-proxyHandler('https://metallic.eu.org/', '/metallic/');
-proxyHandler('https://definitelyscience.com//', '/defsci/');
+proxyHandler('https://web.telegram.org/a/', '/nano/');
 
 server.get('/list', function (req, reply) {
   reply.sendFile('list.html');
